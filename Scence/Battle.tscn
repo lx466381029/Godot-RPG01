@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://doc2ukny3tcs8"]
+
+[ext_resource type="Script" uid="uid://byvbk1yb7mfb7" path="res://Script/Battle.gd" id="1_fhhsu"]
+[ext_resource type="PackedScene" uid="uid://bs4iyskpapqm0" path="res://Scence/Fighter.tscn" id="1_yvxsk"]
+
+[node name="Battle" type="Node2D"]
+script = ExtResource("1_fhhsu")
+
+[node name="enemy" parent="." instance=ExtResource("1_yvxsk")]
+position = Vector2(768, 251)
+max_hp = 120
+attack = 8
+attack_speed = 2.0
+
+[node name="ally" parent="." instance=ExtResource("1_yvxsk")]
+position = Vector2(286, 478)
+max_hp = 150
+attack = 12
